@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int arr[20];                            //array integers to hold values
-int cmp_count = 0;
 
+int arr[20];                            //array integers to hold values
+int cmp_count = 0;                      //
+int mov_count = 0;                      //number of data movement
+int n;
 int main()
 {
     std::cout << "Hello World!\n";
