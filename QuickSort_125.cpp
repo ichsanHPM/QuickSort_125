@@ -55,6 +55,34 @@ void q_short(int low, int high)
 
 
     while (i <= j)                              //Langkah algoritma no 10
+    {
+        while ((arr[i] <= pivot) && (i <= high))
+        {
+            i++
+                cmp_count++;
+        }
+        cmp_count++;
+
+        while ((arr[i] <= pivot) && (low))
+        {
+            j--;
+            cmp_count++;
+        }
+        cmp_count++;
+
+        if (i < j)
+        {
+            swap(i, j);
+            mov_count++;
+        }
+    }
+    if (low < j)
+    {
+        swap(low, j);
+        mov_count++;
+    }
+    q_short(low, j);
+    q_short(j + 1, high);
 }
 
 
