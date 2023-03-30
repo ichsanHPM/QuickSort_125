@@ -32,6 +32,15 @@ void input() {
 
 //swaps the element st index x with the element at index y
 void swap(int x, int y)
+{
+    int temp;
+
+    temp = arr[x];
+    arr[x] = arr[y];
+    arr[y] = temp;
+}
+
+void q_short(int low, int high)
 
 
 int main()
