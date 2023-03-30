@@ -41,6 +41,10 @@ void swap(int x, int y)
 }
 
 void q_short(int low, int high)
+{
+    int pivot, i, j;
+    if (low > high)                             //Langkah algoritma no 1
+}
 
 
 int main()
