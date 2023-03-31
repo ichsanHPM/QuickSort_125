@@ -58,9 +58,10 @@ void q_short(int low, int high)
 
     while (i <= j)                              //Langkah algoritma no 10
     {
-        while ((arr[i] <= pivot) && (i <= high))
+        //search for an elements greather than pivot
+        while ((arr[i] <= pivot) && (i <= high))        //langkah algoritma no 5
         {
-            i++
+            i++                                         //langkah algoritma no 6
                 cmp_count++;
         }
         cmp_count++;
@@ -93,6 +94,8 @@ int main()
     q_short(0, n - 1);
     display();
     system("pause");
+
+    return 0;
 }
 
 
