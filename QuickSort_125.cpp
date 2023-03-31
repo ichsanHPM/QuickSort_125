@@ -62,11 +62,11 @@ void q_short(int low, int high)
         while ((arr[i] <= pivot) && (i <= high))        //langkah algoritma no 5
         {
             i++                                         //langkah algoritma no 6
-                cmp_count++;
+           cmp_count++;
         }
         cmp_count++;
 
-        while ((arr[i] <= pivot) && (low))
+        while ((arr[j] > pivot) && (low))
         {
             j--;
             cmp_count++;
@@ -88,6 +88,21 @@ void q_short(int low, int high)
     q_short(j + 1, high);
 }
 
+void display()
+{
+    cout << "/n---------------" << endl;
+    cout << "sorted array" << endl;
+    cout << "-----------------" << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+    cout << "n\nNumber of comparasion: " << cmp_count << endl;
+    cout << "Number of data movements" << mov_count << endl;
+}
+
 int main()
 {
     input();
@@ -96,11 +111,5 @@ int main()
     system("pause");
 
     return 0;
-}
-
-
-int main()
-{
-    std::cout << "Hello World!\n";
 }
 
