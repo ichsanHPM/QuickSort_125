@@ -50,6 +50,8 @@ void q_short(int low, int high)
     //one containing elements less that or equal to pivot
     //outher conntainning
 
+    pivot = arr[low];                           ////Langkah algoritma no 2
+
     i = low + 1;                                //Langkah algoritma no 3
     j = high;                                   //Langkah algoritma no 4
 
@@ -83,6 +85,14 @@ void q_short(int low, int high)
     }
     q_short(low, j);
     q_short(j + 1, high);
+}
+
+int main()
+{
+    input();
+    q_short(0, n - 1);
+    display();
+    system("pause");
 }
 
 
